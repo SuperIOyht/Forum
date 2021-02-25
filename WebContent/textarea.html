@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+a {
+	color: #333;
+	text-decoration: none;
+}
+body, input, button, select, textarea {
+	font: 12px/1.5 Tahoma, Helvetica, 'Microsoft YaHei', 'STXiHei', 'SimSun',
+		sans-serif;
+	color: #444;
+}
+.bm_h {
+    padding: 0 10px;
+    height: 31px;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #BFB8A5;
+    background: #FDF5E6;
+    line-height: 31px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#f_pst .bm_c {
+    padding: 20px;
+}
+.pbt {
+    margin-bottom: 10px;
+}
+#f_pst .px {
+    padding: 2px;
+}
+.postarea {
+	width: auto;
+	border: 1px solid;
+    border-color: #999 #CCC #CCC #999;
+    margin-right: 170px;
+    padding: 4px;
+    background: #FDF5E6;
+    zoom: 1;
+}
+.pt {
+    width: 100%;
+    margin-right: 0;
+    padding: 0 !important;
+    border: none;
+    background: #FDF5E6 none;
+}
+textarea {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textarea;
+    background-color: -internal-light-dark-color(white, black);
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
+    border-image: initial;
+    padding: 2px;
+}
+.ptm {
+    padding-top: 10px !important;
+}
+.pnpost .pn {
+    height: 26px;
+}
+.pn {
+    vertical-align: middle;
+    overflow: hidden;
+    margin-right: 3px;
+    padding: 0;
+    height: 23px;
+    border: 1px solid #999;
+    background: #E5E5E5 url(img/pn.png) repeat-x 0 0;
+    cursor: pointer;
+    -moz-box-shadow: 0 1px 0 #E5E5E5;
+    -webkit-box-shadow: 0 1px 0 #E5E5E5;
+    box-shadow: 0 1px 0 #E5E5E5;
+}
+.pnc, a.pnc {
+    border-color: #235994;
+    background-color: #06C;
+    background-position: 0 -48px;
+    color: #FFF !important;
+}
+.pn strong {
+    font-weight: 700;
+}
+.pn strong {
+    padding: 0 10px;
+    line-height: 21px;
+}
+</style>
+</head>
+<body>
+	<div id="f_pst" class="bm">
+				<div class="bm_h">
+					<h2>
+						在此发帖
+					</h2>
+				</div>
+				<div class="bm_c">
+					<form method="post" autocomplete="off" id="fastpostform" action="" onsubmit="return fastpostvalidate(this)">
+						<div class="pbt cl">
+							<span>输入标题：</span>
+							<input type="text" id="subject" name="subject" class="px" value="" onkeyup="strLenCalc(this, 'checklen', 80);"  style="width: 25em">
+							<span>最多50个字符</span>
+						</div>
+						<div class="postarea">
+							<span>输入正文：</span>
+							<textarea rows="6" cols="80" name="message" id="fastpostmessage" onkeydown="seditor_ctlent(event, '$(\'fastpostsubmit\').click()');"  class="pt"></textarea>
+						</div>
+						<p class="ptm pnpost">
+							<button type="submit" name="topicsubmit" id="fastpostsubmit"
+								value="topicsubmit" tabindex="13" class="pn pnc">
+								<strong>发表帖子</strong>
+							</button>
+						</p>
+					</form>
+				</div>
+			</div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录界面</title>
+<style type="text/css">
+.container {
+	min-height: 500px;
+}
+
+.header {
+	height: 102px;
+	overflow: hidden;
+	zoom: 1;
+	border-bottom: 1px solid #d6dfea;
+	background: #B0E2FF;
+}
+
+#head_area {
+	border-bottom: 0 solid #BFB8A5;
+	margin: 0 auto;
+	width: 960px;
+	min-height: 70px;
+}
+
+#head_area h2 {
+	padding: 0 20px 8px 0;
+	float: left;
+}
+
+#userInfo {
+	padding-top: 10px;
+	padding-right: 60px;
+	_padding-right: 54px;
+	line-height: 2.3;
+	float: right;
+}
+
+#userInfo p {
+	text-align: right;
+}
+
+.username {
+	margin: 1px;
+}
+
+.pipe {
+	margin: 0 5px 0 0;
+	color: #CCC;
+}
+
+body, input, button, select, textarea {
+	font: 12px/1.5 Tahoma, Helvetica, 'Microsoft YaHei', 'STXiHei', 'SimSun',
+		sans-serif;
+	color: #444;
+}
+
+body {
+	background: #FAEBD7;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+.content {
+	width: 960px;
+	margin: 0px auto;
+	padding: 0 24px;
+	background-color: #ffffe6;
+	border: 1px solid;
+}
+
+.content_wrapper {
+	min-height: 372px;
+	padding-top: 12px;
+	padding-bottom: 120px;
+	margin: 0 auto;
+}
+
+.content_wrapper {
+	min-height: 400px;
+	padding-top: 13px;
+	background: url(img/landscape.png);
+	padding-bottom: 12px;
+	margin: 0 auto;
+}
+
+.xm_login_container {
+	width: 434px !important;
+	height: 387px !important;
+	float: right;
+}
+
+.xm_login_card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.xm_login_card_tab {
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+	border-bottom: 1px solid #a0b1c4;
+	background-color: #fff998;
+	border-radius: 6px 6px 0 0;
+}
+
+.xm_login_card_cnt {
+	position: relative;
+	width: 100%;
+	height: 336px;
+	background-color: #FDF5E6;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	border: 1px solid #888;
+	padding: 7px;
+	font-size: 25px;
+}
+
+p1 {
+	font-size: .12rem;
+	color: #BBBBBB;
+	margin: 0;
+}
+</style>
+</head>
+
+<body>
+	<form action="Login.do" method="POST">
+		<div class="container">
+			<div id="head_area">
+				<h2>
+					<a href="mainpage.jsp" title="论坛"><img src="img/logo.png"
+						border="0"></a>
+				</h2>
+			</div>
+			<div class="content">
+				<div class="content_logo"></div>
+				<div class="content_wrapper">
+					<div class="xm_login_container">
+						<div class="xm_login_card">
+							<div class="xm_login_card_tab">用户登录</div>
+							<div class="xm_login_card_cnt">
+								<br> <br> <br> 用户名<input type="text" id="name"
+									name="name" style="float:right;"><br>
+								<br> <br> <br> 密码<input type="password"
+									id="password" name="password" style="float:right;"><br>
+								<br>
+								<br> <input type="submit" id="submit" value="登录"
+									style="text-align: center; margin: 0px auto; height: 40px; width: 200px; color: #778899; background-color: #fff998; cursor: pointer; border-radius: 10px;">
+								<br>
+								<br> <a href="register.html" target="_self" style="text-align:center;"><font size=3px
+									color=#8A8A8A>注册账户</font></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

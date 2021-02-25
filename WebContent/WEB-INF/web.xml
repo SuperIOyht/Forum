@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+<servlet>
+	<servlet-name>GetPostServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.GetPostServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>GetPostServlet</servlet-name>
+	<url-pattern>/GetPost.do</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>RegisterServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.RegisterServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>RegisterServlet</servlet-name>
+	<url-pattern>/Register.do</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>LoginServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>LoginServlet</servlet-name>
+	<url-pattern>/Login.do</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>LogoutServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>LogoutServlet</servlet-name>
+	<url-pattern>/Logout.do</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ValidSameNameServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.ValidSameNameServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ValidSameNameServlet</servlet-name>
+	<url-pattern>/ValidSameName.do</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>AddPostServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.AddPostServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AddPostServlet</servlet-name>
+	<url-pattern>/AddPost.do</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>GetForumIndexServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.GetForumIndexServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>GetForumIndexServlet</servlet-name>
+	<url-pattern>/GetForumIndex.do</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>AddCommentServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.AddCommentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AddCommentServlet</servlet-name>
+	<url-pattern>/AddComment.do</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>AddPostCheckServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.AddPostCheckServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AddPostCheckServlet</servlet-name>
+	<url-pattern>/AddPostCheck.do</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>AddComCheckServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.AddComCheckServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AddComCheckServlet</servlet-name>
+	<url-pattern>/AddComCheck.do</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ManageServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.ManageServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ManageServlet</servlet-name>
+	<url-pattern>/Manage.do</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ChangeIconServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.ChangeIconServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ChangeIconServlet</servlet-name>
+	<url-pattern>/ChangeIcon.do</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>RemovePostCheckServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.RemovePostCheckServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>RemovePostCheckServlet</servlet-name>
+	<url-pattern>/RemovePostCheck.do</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>RemoveComCheckServlet</servlet-name>
+	<servlet-class>edu.zjut.finalwork.web.RemoveComCheckServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>RemoveComCheckServlet</servlet-name>
+	<url-pattern>/RemoveComCheck.do</url-pattern>
+</servlet-mapping>
+</web-app>
